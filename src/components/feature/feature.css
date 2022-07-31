@@ -1,0 +1,48 @@
+.feature,.explore{
+    margin: 200px 0;
+}
+.feature-img{
+    max-width: 77%;
+    cursor: pointer;
+}
+.feature-h2{
+    margin-top: 100px;
+    font-weight: bold;
+    line-height: 50px;
+}
+.feature-p,.explore-p{
+    margin-top: 25px;
+    margin-bottom: 50px;
+    color: #808080;
+    font-size: 17px;
+    line-height: 18px;
+}
+.feature-a,.explore-a{
+    width: 190px;
+    padding: 15px 10px;
+    display: block;
+    background: #6900d1;
+    text-decoration: none !important;
+    color: #fff !important;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 9px 9px 1px rgba(204,204,204,0.5);
+}
+.feature-a:hover, .explore-a:hover{
+    color: #6900d1 !important;
+    background-color: #fff;
+    border: 2px solid #6900d1;
+}
+.explore-h2{
+    margin-top: 50px;
+    font-weight: bold;
+    line-height: 50px;
+}
+.explore-a{
+    margin-bottom: 50px;
+}
+.img1{
+    max-height: 550px;
+}
