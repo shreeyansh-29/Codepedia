@@ -1,0 +1,134 @@
+.section3{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    padding: 40px 100px 100px 100px;
+}
+
+.section3-p{
+    margin: 20px 0 10px;
+    font-size: 1.1rem;    
+}
+
+.title4{
+    text-align: center !important;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.he{
+    text-align: center;
+}
+
+.contact {
+    position: relative;
+    width: 100%;
+    margin-top: 5px;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+  
+.contact-form {
+    position: relative;
+    background: #eaeaf3;
+    width: calc(100% - 400px);
+    padding: 60px 40px 20px;
+    border-radius: 15px;
+    box-shadow: black 0px 0px 10px;
+}
+
+.form-row {
+    width: 100%;
+    display: flex;
+}
+  
+.input50 {
+    width: 50%;
+    margin: 0 10px;
+}
+
+.input100 {
+    width: 100%;
+    margin: 0 10px;
+}
+
+.form-row input, .form-row textarea{
+    position: relative;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: #111;
+    background: transparent;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 10px 0;
+    resize: none;
+}
+
+.form-row textarea {
+    height: 150px;
+}
+
+::placeholder{
+    color: grey;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+}
+
+.sendBtn {   
+    background-color: var(--secondary-color);
+    color: grey;
+    margin: 0;
+    border-radius: 8px;
+    padding: 8px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.sendBtn:hover{
+    color: #eaeaf3;
+    background-color: #6900d1;
+}
+
+
+.contact-info {
+    width: 350px;    
+    background: #eaeaf3;
+    box-shadow: black 0px 0px 10px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 15px;
+    padding: 60px 40px 20px;
+}
+.contact-info{
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
+    cursor: default;
+}
+
+.info-box {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.contact-icon {
+    width: 20px;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+
+.details h4 {
+    color: var(--secondary-color);
+    font-family: 'Poppins',sans-serif;
+}
+
+.details p,.details a {
+  color: #111;
+} 

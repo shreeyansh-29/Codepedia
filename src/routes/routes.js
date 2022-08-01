@@ -4,10 +4,10 @@ import Home from "../pages/homePage";
 import Skills from "../pages/skills/skills";
 import Practice from "../pages/practice/practice";
 import Learn from "../pages/learn/learn";
-import ContactUs from "../pages/contactUs";
+import ContactUs from "../pages/contactUs/contactUs";
 import Navbar from "../components/navbar/navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
-import About from "../pages/about"
+import About from "../pages/about";
 
 function routes() {
   return (

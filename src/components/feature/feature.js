@@ -11,7 +11,7 @@ function feature() {
         <div className="container">
           <div className="row">
             <div className="col-md-6 text-center">
-              <img src={image1} alt="first" className="feature-img"/>
+              <img src={image1} alt="first" className="feature-img" />
             </div>
             <div className="col-md-6">
               <h2 className="feature-h2">
@@ -22,7 +22,7 @@ function feature() {
                 we have selected worlds few best sites for learning and for
                 pratising your skills and for better insight of your knowleadge
               </p>
-              <Link className="feature-a" to="learn/code" target="_blank">
+              <Link className="feature-a" to="learn/code" target="_parent">
                 learn and code
               </Link>
             </div>
@@ -39,9 +39,8 @@ function feature() {
               </h2>
               <p className="feature-p">
                 I am a programmer and currently in my final year of graduation
-                <br />  and have made this website for
-                the fellow programmer to learn new skills and to compete with
-                real programmer.
+                <br /> and have made this website for the fellow programmer to
+                learn new skills and to compete with real programmer.
                 <br /> I have selected few top websites for learning and
                 praticing for your interviews and all.
                 <br />
@@ -50,7 +49,9 @@ function feature() {
                 the <br />
                 below link.
               </p>
-              <Link className="explore-a" to="/about" target="_blank">About the Developer</Link>
+              <Link className="explore-a" to="/about" target="_parent">
+                About the Developer
+              </Link>
             </div>
             <div className="col-md-6">
               <img src={image2} className="img-fluid img1" alt="second" />

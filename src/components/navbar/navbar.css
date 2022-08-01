@@ -7,9 +7,9 @@
 .navStyle{
   margin: 0px 10px 0 0 !important;
   padding: 8px !important;
-  color: rgb(221, 205, 205) !important;
+  color: white !important;
   font-weight: bold !important;
-  font-size: 18px !important;
+  font-size: 17px !important;
   border-bottom: 2px solid transparent;
 }
 .navStyle:hover{
