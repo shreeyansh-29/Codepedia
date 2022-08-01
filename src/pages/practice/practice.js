@@ -1,6 +1,11 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import ScrollButton from "../../components/scrollButton/scrollButton";
 import "./practice.css";
+import {Arrays} from "./arrays";
+import {Matrix} from "./matrix";
+import {Strings} from "./strings";
+import {Searching} from "./searching";
 
 function practice() {
   return (
@@ -10,332 +15,19 @@ function practice() {
         <div className="questions">
           <ul>
             <li className="list">
-              <a
-                className="question-links"
-                href="https://www.geeksforgeeks.org/write-a-program-to-reverse-an-array-or-string/"
-                target="_blank"
-              >
-                Reverse the array
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://www.geeksforgeeks.org/maximum-and-minimum-in-an-array/"
-                target="_blank"
-              >
-                Find the maximum and minimum element in an array
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/kth-smallest-element5635/1"
-                target="_blank"
-              >
-                Find the "Kth" max and min element of an array{" "}
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1"
-                target="_blank"
-              >
-                Given an array which consists of only 0, 1 and 2. Sort the array
-                without using any sorting algo
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://www.geeksforgeeks.org/move-negative-numbers-beginning-positive-end-constant-extra-space/"
-                target="_blank"
-              >
-                Move all the negative elements to one side of the array{" "}
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/union-of-two-arrays3538/1"
-                target="_blank"
-              >
-                Find the Union and Intersection of the two sorted arrays.
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/cyclically-rotate-an-array-by-one2614/1"
-                target="_blank"
-              >
-                Write a program to cyclically rotate an array by one.
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/kadanes-algorithm-1587115620/1"
-                target="_blank"
-              >
-                Find Largest sum contiguous Subarray [V. IMP]
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/minimize-the-heights3351/1"
-                target="_blank"
-              >
-                Minimise the maximum difference between heights [V.IMP]
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/minimum-number-of-jumps-1587115620/1"
-                target="_blank"
-              >
-                Minimum no. of Jumps to reach end of an array
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://leetcode.com/problems/find-the-duplicate-number/"
-                target="_blank"
-              >
-                Find duplicate in an array of N+1 Integers
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays5135/1"
-                target="_blank"
-              >
-                Merge 2 sorted arrays without using Extra space.
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/kadanes-algorithm-1587115620/1"
-                target="_blank"
-              >
-                Kadane's Algo [V.V.V.V.V IMP]
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://leetcode.com/problems/merge-intervals/"
-                target="_blank"
-              >
-                Merge Intervals
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://leetcode.com/problems/next-permutation/"
-                target="_blank"
-              >
-                Next Permutation
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/inversion-of-array-1587115620/1"
-                target="_blank"
-              >
-                Count Inversion
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/"
-                target="_blank"
-              >
-                Best time to buy and Sell stock
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/count-pairs-with-given-sum5022/1"
-                target="_blank"
-              >
-                Find all pairs on integer array whose sum is equal to given
-                number
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://www.geeksforgeeks.org/median-of-two-sorted-arrays-of-different-sizes/"
-                target="_blank"
-              >
-                Median of 2 sorted arrays of different size
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/find-the-median0527/1"
-                target="_blank"
-              >
-                Median of 2 sorted arrays of equal size
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/common-elements1132/1"
-                target="_blank"
-              >
-                Find common elements In 3 sorted arrays
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://www.geeksforgeeks.org/rearrange-array-alternating-positive-negative-items-o1-extra-space/"
-                target="_blank"
-              >
-                Rearrange the array in alternating positive and negative items
-                with O(1) extra space
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/subarray-with-0-sum-1587115621/1"
-                target="_blank"
-              >
-                Find if there is any subarray with sum equal to 0
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/factorials-of-large-numbers2508/1"
-                target="_blank"
-              >
-                Find factorial of a large number
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/maximum-product-subarray3604/1"
-                target="_blank"
-              >
-                find maximum product subarray{" "}
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/longest-consecutive-subsequence2449/1"
-                target="_blank"
-              >
-                Find longest coinsecutive subsequence
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://www.geeksforgeeks.org/given-an-array-of-of-size-n-finds-all-the-elements-that-appear-more-than-nk-times/"
-                target="_blank"
-              >
-                Given an array of size n and a number k, fin all elements that
-                appear more than " n/k " times.
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://www.geeksforgeeks.org/maximum-profit-by-buying-and-selling-a-share-at-most-twice/"
-                target="_blank"
-              >
-                Maximum profit by buying and selling a share atmost twice
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/array-subset-of-another-array2317/1"
-                target="_blank"
-              >
-                Find whether an array is a subset of another array
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/triplet-sum-in-array-1587115621/1"
-                target="_blank"
-              >
-                Find the triplet that sum to a given value
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/trapping-rain-water-1587115621/1"
-                target="_blank"
-              >
-                Trapping Rain water problem
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/chocolate-distribution-problem3825/1"
-                target="_blank"
-              >
-                Chocolate Distribution problem
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/smallest-subarray-with-sum-greater-than-x5651/1"
-                target="_blank"
-              >
-                Smallest Subarray with sum greater than a given value
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/three-way-partitioning/1"
-                target="_blank"
-              >
-                Three way partitioning of an array around a given value
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/minimum-swaps-required-to-bring-all-elements-less-than-or-equal-to-k-together4847/1"
-                target="_blank"
-              >
-                Minimum swaps required bring elements less equal K together
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/palindromic-array-1587115620/1"
-                target="_blank"
-              >
-                Minimum no. of operations required to make an array palindrome
-              </a>
+              {Arrays.map((item, index) => (
+                <>
+                  <a
+                    key={index}
+                    className="question-links"
+                    href={item.href}
+                    target="_blank"
+                  >
+                    {item.name}
+                  </a>
+                  <br />
+                </>
+              ))}
             </li>
           </ul>
         </div>
@@ -346,95 +38,19 @@ function practice() {
         <div className="questions">
           <ul>
             <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/spirally-traversing-a-matrix-1587115621/1"
-                target="_blank"
-              >
-                Spiral traversal on a Matrix
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://leetcode.com/problems/search-a-2d-matrix/"
-                target="_blank"
-              >
-                Search an element in a matriix
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/median-in-a-row-wise-sorted-matrix1527/1"
-                target="_blank"
-              >
-                Find median in a row wise sorted matrix
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/row-with-max-1s0023/1"
-                target="_blank"
-              >
-                Find row with maximum no. of 1's
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/sorted-matrix2333/1"
-                target="_blank"
-              >
-                Print elements in sorted order using row-column wise sorted
-                matrix
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/max-rectangle/1"
-                target="_blank"
-              >
-                Maximum size rectangle
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://www.geeksforgeeks.org/find-a-specific-pair-in-matrix/"
-                target="_blank"
-              >
-                Find a specific pair in matrix
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://www.geeksforgeeks.org/rotate-a-matrix-by-90-degree-in-clockwise-direction-without-using-any-extra-space/"
-                target="_blank"
-              >
-                Rotate matrix by 90 degrees
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/kth-element-in-matrix/1"
-                target="_blank"
-              >
-                Kth smallest element in a row-cpumn wise sorted matrix
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://www.geeksforgeeks.org/common-elements-in-all-rows-of-a-given-matrix/"
-                target="_blank"
-              >
-                Common elements in all rows of a given matrix
-              </a>
+              {Matrix.map((item, index) => (
+                <>
+                  <a
+                    key={index}
+                    className="question-links"
+                    href={item.href}
+                    target="_blank"
+                  >
+                    {item.name}
+                  </a>
+                  <br />
+                </>
+              ))}
             </li>
           </ul>
         </div>
@@ -445,245 +61,19 @@ function practice() {
         <div className="questions">
           <ul>
             <li className="list">
-              <a
-                className="question-links"
-                href="https://leetcode.com/problems/reverse-string/"
-                target="_blank"
-              >
-                Reverse a String
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/palindrome-string0817/1"
-                target="_blank"
-              >
-                Check whether a String is Palindrome or not
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://www.geeksforgeeks.org/print-all-the-duplicates-in-the-input-string/"
-                target="_blank"
-              >
-                Find Duplicate characters in a string
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://www.geeksforgeeks.org/a-program-to-check-if-strings-are-rotations-of-each-other/"
-                target="_blank"
-              >
-                Write a Code to check whether one string is a rotation of
-                another
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://www.programiz.com/java-programming/examples/check-valid-shuffle-of-strings"
-                target="_blank"
-              >
-                Write a Program to check whether a string is a valid shuffle of
-                two strings or not
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://leetcode.com/problems/count-and-say/"
-                target="_blank"
-              >
-                Count and Say problem
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/longest-palindrome-in-a-string3411/1"
-                target="_blank"
-              >
-                Write a program to find the longest Palindrome in a string.[
-                Longest palindromic Substring]
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/longest-repeating-subsequence2004/1"
-                target="_blank"
-              >
-                Find Longest Recurring Subsequence in String
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://www.geeksforgeeks.org/print-subsequences-string/"
-                target="_blank"
-              >
-                Print all Subsequences of a string.
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/permutations-of-a-given-string2041/1"
-                target="_blank"
-              >
-                Print all the permutations of the given string
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://www.geeksforgeeks.org/split-the-binary-string-into-substrings-with-equal-number-of-0s-and-1s/"
-                target="_blank"
-              >
-                Split the Binary string into two substring with equal 0’s and
-                1’s
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/word-wrap1646/1"
-                target="_blank"
-              >
-                Word Wrap Problem [VERY IMP].
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/edit-distance3702/1"
-                target="_blank"
-              >
-                EDIT Distance [Very Imp]
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/next-permutation5226/1"
-                target="_blank"
-              >
-                Find next greater number with same set of digits. [Very Very
-                IMP]
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/parenthesis-checker2744/1"
-                target="_blank"
-              >
-                Balanced Parenthesis problem.[Imp]
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/word-break1352/1"
-                target="_blank"
-              >
-                Word break Problem[ Very Imp]
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching/"
-                target="_blank"
-              >
-                Rabin Karp Algo
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/longest-prefix-suffix2527/1"
-                target="_blank"
-              >
-                KMP Algo
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://www.geeksforgeeks.org/convert-sentence-equivalent-mobile-numeric-keypad-sequence/"
-                target="_blank"
-              >
-                Convert a Sentence into its equivalent mobile numeric keypad
-                sequence.
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/count-the-reversals0401/1"
-                target="_blank"
-              >
-                Minimum number of bracket reversals needed to make an expression
-                balanced.
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/count-palindromic-subsequences/1"
-                target="_blank"
-              >
-                Count All Palindromic Subsequence in a given String.
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://www.geeksforgeeks.org/find-count-number-given-string-present-2d-character-array/"
-                target="_blank"
-              >
-                Count of number of given string in 2D character array
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/find-the-string-in-grid0111/1"
-                target="_blank"
-              >
-                Search a Word in a 2D Grid of characters.
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://www.geeksforgeeks.org/boyer-moore-algorithm-for-pattern-searching/"
-                target="_blank"
-              >
-                Boyer Moore Algorithm for Pattern Searching.
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/roman-number-to-integer3201/1"
-                target="_blank"
-              >
-                Converting Roman Numerals to Decimal
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://leetcode.com/problems/longest-common-prefix/"
-                target="_blank"
-              >
-                Longest Common Prefix
-              </a>
+              {Strings.map((item, index) => (
+                <>
+                  <a
+                    key={index}
+                    className="question-links"
+                    href={item.href}
+                    target="_blank"
+                  >
+                    {item.name}
+                  </a>
+                  <br />
+                </>
+              ))}
             </li>
           </ul>
         </div>
@@ -694,212 +84,19 @@ function practice() {
         <div className="questions">
           <ul>
             <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/first-and-last-occurrences-of-x3116/1"
-                target="_blank"
-              >
-                Find first and last positions of an element in a sorted array
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/value-equal-to-index-value1330/1"
-                target="_blank"
-              >
-                Find a Fixed Point (Value equal to index) in a given array
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://leetcode.com/problems/search-in-rotated-sorted-array/"
-                target="_blank"
-              >
-                Search in a rotated sorted array
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/count-squares3649/1"
-                target="_blank"
-              >
-                square root of an integer
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/middle-of-three2926/1"
-                target="_blank"
-              >
-                Maximum and minimum of an array using minimum number of
-                comparisons
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://www.geeksforgeeks.org/optimum-location-point-minimize-total-distance/#:~:text=We%20need%20to%20find%20a,set%20of%20points%20is%20minimum.&text=In%20above%20figure%20optimum%20location,is%20minimum%20obtainable%20total%20distance."
-                target="_blank"
-              >
-                Optimum location of point to minimize total distance
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/find-missing-and-repeating2512/1"
-                target="_blank"
-              >
-                Find the repeating and the missing
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/majority-element-1587115620/1"
-                target="_blank"
-              >
-                find majority element
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://www.geeksforgeeks.org/searching-array-adjacent-differ-k/"
-                target="_blank"
-              >
-                Searching in an array where adjacent differ by at most k
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/find-pair-given-difference1559/1"
-                target="_blank"
-              >
-                find a pair with a given difference
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/find-all-four-sum-numbers1732/1"
-                target="_blank"
-              >
-                find four elements that sum to a given value
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/stickler-theif-1587115621/1"
-                target="_blank"
-              >
-                maximum sum such that no 2 elements are adjacent
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/count-triplets-with-sum-smaller-than-x5549/1"
-                target="_blank"
-              >
-                Count triplet with sum smaller than a given value
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays5135/1"
-                target="_blank"
-              >
-                merge 2 sorted arrays
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/zero-sum-subarrays1825/1"
-                target="_blank"
-              >
-                print all subarrays with 0 sum
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/product-array-puzzle4525/1"
-                target="_blank"
-              >
-                Product array Puzzle
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/sort-by-set-bit-count1153/1"
-                target="_blank"
-              >
-                Sort array according to count of set bits
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/minimum-swaps/1"
-                target="_blank"
-              >
-                minimum no. of swaps required to sort the array
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://www.hackerearth.com/practice/algorithms/searching/binary-search/practice-problems/algorithm/bishu-and-soldiers/"
-                target="_blank"
-              >
-                Bishu and Soldiers
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://www.hackerearth.com/practice/algorithms/searching/binary-search/practice-problems/algorithm/rasta-and-kheshtak/"
-                target="_blank"
-              >
-                Rasta and Kheshtak
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://www.hackerearth.com/practice/algorithms/searching/binary-search/practice-problems/algorithm/kth-smallest-number-again-2/"
-                target="_blank"
-              >
-                Kth smallest number again
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="http://theoryofprogramming.com/2017/12/16/find-pivot-element-sorted-rotated-array/"
-                target="_blank"
-              >
-                Find pivot element in a sorted array
-              </a>
-            </li>
-            <li className="list">
-              <a
-                className="question-links"
-                href="https://practice.geeksforgeeks.org/problems/k-th-element-of-two-sorted-array1317/1"
-                target="_blank"
-              >
-                K-th Element of Two Sorted Arrays
-              </a>
+              {Searching.map((item, index) => (
+                <>
+                  <a
+                    key={index}
+                    className="question-links"
+                    href={item.href}
+                    target="_blank"
+                  >
+                    {item.name}
+                  </a>
+                  <br />
+                </>
+              ))}
             </li>
           </ul>
         </div>
@@ -2497,7 +1694,7 @@ function practice() {
           </ul>
         </div>
       </div>
-      <ScrollButton/>
+      <ScrollButton />
     </div>
   );
 }

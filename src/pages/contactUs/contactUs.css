@@ -3,7 +3,7 @@
     flex-direction: column;
     height: 100vh;
     align-items: center;
-    padding: 40px 100px 100px 100px;
+    padding: 100px;
 }
 
 .section3-p{
@@ -38,6 +38,10 @@
     padding: 60px 40px 20px;
     border-radius: 15px;
     box-shadow: black 0px 0px 10px;
+}
+
+.contact-form:hover{
+    transform: scale(1.01);
 }
 
 .form-row {
@@ -106,10 +110,9 @@
     border-radius: 15px;
     padding: 60px 40px 20px;
 }
-.contact-info{
+
+.contact-info:hover{
     transform: scale(1.02);
-    transition: all 0.2s ease-in-out;
-    cursor: default;
 }
 
 .info-box {
