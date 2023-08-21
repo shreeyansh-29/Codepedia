@@ -1,10 +1,10 @@
-.bg-myColor{
-    background-color: #6900d1;
+.bg-myColor {
+  background-color: #6900d1;
 }
-.img2{
-    width: 200px;
+.img2 {
+  width: 200px;
 }
-.navStyle{
+.navStyle {
   margin: 0px 10px 0 0 !important;
   padding: 8px !important;
   color: white !important;
@@ -12,6 +12,6 @@
   font-size: 17px !important;
   border-bottom: 2px solid transparent;
 }
-.navStyle:hover{
-    border-bottom: 2px solid #fff;
+.navStyle:hover {
+  border-bottom: 2px solid #fff;
 }

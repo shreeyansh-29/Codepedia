@@ -4,7 +4,7 @@ import "./homeGrid.css";
 
 function homeGrid() {
   return (
-    <div className="row banner">
+    <div className="banner">
       <div className="col-md-6">
         <h1 className="banner-h1">Let's Start The Magic</h1>
         <p className="banner-p">
@@ -17,7 +17,7 @@ function homeGrid() {
           EXPLORE MORE
         </a>
       </div>
-      <div className="col-md-6 text-center">
+      <div className="col-md-6 text-center"w>
         <img src={image} alt="first" className="img-fluid banner-img" />
       </div>
     </div>
