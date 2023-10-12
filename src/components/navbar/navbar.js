@@ -4,7 +4,7 @@ import image from "../../assests/images/CODEPEDIA3.png";
 
 function CollapseNavbar() {
   return (
-    <Navbar collapseOnSelect expand="md" bg="myColor" variant="dark" fixed="top">
+    <Navbar collapseOnSelect expand="md" bg="myColor" variant="dark" sticky="top">
       <Container>
         <Navbar.Brand>
           <img src={image} alt="first" className="img2" />
