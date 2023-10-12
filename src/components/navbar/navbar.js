@@ -1,12 +1,39 @@
+import React, {useState, useEffect} from "react";
+import {animateScroll as scroll} from "react-scroll";
 import {Container, Navbar, Nav} from "react-bootstrap";
 import "./navbar.css";
 import image from "../../assests/images/CODEPEDIA3.png";
 
 function CollapseNavbar() {
+  const [scrollNav, setScrollNav] = useState(false);
+
+  const changeNav = () => {
+    if (window.scrollY >= 80) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+  };
+
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeNav);
+  }, []);
+
   return (
-    <Navbar collapseOnSelect expand="md" bg="myColor" variant="dark" sticky="top">
+    <Navbar
+      collapseOnSelect
+      expand="md"
+      bg="myColor"
+      variant="dark"
+      fixed="top"
+      scrollNav={scrollNav}
+    >
       <Container>
-        <Navbar.Brand>
+        <Navbar.Brand onClick={toggleHome}>
           <img src={image} alt="first" className="img2" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
